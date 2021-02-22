@@ -13,11 +13,11 @@ public class HelloWorldController {
 
     @GetMapping
     public ResponseEntity<String> print(){
-        return new ResponseEntity<String>("Hello People", HttpStatus.OK);
+        return new ResponseEntity<String>("Hello Bharati", HttpStatus.OK);
     }
 
     @GetMapping("{name}")
     public ResponseEntity<String> printWithName(@PathVariable String name){
-        return new ResponseEntity<String>("Hello "+name, HttpStatus.OK);
+        return new ResponseEntity<String>("Hello Selva"+name, HttpStatus.OK);
     }
 }
